@@ -8,7 +8,7 @@ import { FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
 })
 export class AppComponent implements OnInit{
 
-  forbiddenUsernames = ['Cris', 'Cristina', 'Maria'];
+  forbiddenUsernames = ['Cris', 'Cristina', 'Maria', 'cris', 'cristina', 'maria'];
   genders = ['male', 'female'];
 
   signupForm: FormGroup;
