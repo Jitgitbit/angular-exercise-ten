@@ -27,6 +27,12 @@ export class AppComponent implements OnInit{
       'gender': new FormControl('male'),
       'hobbies': new FormArray([])
     });
+    this.signupForm.valueChanges.subscribe(
+      (value) => console.log(`===>> Show me the userData:`,value.userData)
+    );
+    this.signupForm.statusChanges.subscribe(
+      (status) => console.log(`======>>> Status says what?`,status)
+    );
   }
   onSubmit(){
     console.log(`signupForm says what?`,this.signupForm);
