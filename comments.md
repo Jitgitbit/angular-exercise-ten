@@ -7,5 +7,5 @@ npm install --save bootstrap@3
 ng serve
 
 
-Reactive:
+Reactive Approach:
 Form is created programmatically and syncronized with the DOM
