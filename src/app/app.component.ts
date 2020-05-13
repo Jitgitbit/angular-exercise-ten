@@ -36,6 +36,7 @@ export class AppComponent implements OnInit{
   }
   onSubmit(){
     console.log(`signupForm says what?`,this.signupForm);
+    // this.signupForm.reset();                                                // resetting on submit creates bug due to async ! solution TBD !
   }
   onAddHobby(){
     const control = new FormControl(null, Validators.required);
